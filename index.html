@@ -1,0 +1,1880 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    
+    <!-- SEO Meta Tags -->
+    <title>Laizer Consultation (Pty) Ltd - Expert CIPC & SARS Compliance</title>
+    <meta name="description" content="Laizer Consultation offers fast, reliable business compliance services in South Africa, including company registration, CSD, B-BBEE, tax clearance, and more. Effortless compliance, every time."/>
+    <meta name="keywords" content="company registration south africa, cipc services, sars tax clearance, b-bbee certificate, csd registration, nhbrc, coida, annual returns, laizer consultation"/>
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Laizer Consultation (Pty) Ltd - Expert CIPC & SARS Compliance">
+    <meta property="og:description" content="Fast, reliable business compliance services in South Africa. We handle company registration, CSD, B-BBEE, tax clearance, and more.">
+    <meta property="og:image" content="logo.png">
+
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image">
+    <meta property="twitter:title" content="Laizer Consultation (Pty) Ltd - Expert CIPC & SARS Compliance">
+    <meta property="twitter:description" content="Fast, reliable business compliance services in South Africa. We handle company registration, CSD, B-BBEE, tax clearance, and more.">
+    <meta property="twitter:image" content="logo.png">
+
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"/>
+    
+    <!-- Structured Data for SEO -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "ProfessionalService",
+      "name": "Laizer Consultation (Pty) Ltd",
+      "image": "logo.png",
+      "telephone": "+27713935250",
+      "address": {
+        "@type": "PostalAddress",
+        "addressLocality": "Vosloorus",
+        "addressCountry": "ZA"
+      },
+      "description": "Laizer Consultation offers a comprehensive suite of professional services to help businesses navigate compliance and administration in South Africa.",
+      "servesCuisine": "Business Compliance Services",
+      "priceRange": "R250 - R3000",
+      "openingHoursSpecification": [
+        {
+          "@type": "OpeningHoursSpecification",
+          "dayOfWeek": [
+            "Monday",
+            "Tuesday",
+            "Wednesday",
+            "Thursday",
+            "Friday"
+          ],
+          "opens": "09:00",
+          "closes": "17:00"
+        }
+      ]
+    }
+    </script>
+
+    <style>
+        /* General Styles
+        -------------------------------------------------- */
+        @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
+        :root {
+            --primary-color: #003366;
+            --secondary-color: #C5A46D;
+            --accent-color: #0077c8;
+            --background-light: #f4f6f8;
+            --text-color: #333;
+            --text-light: #c0c0c0;
+            --card-bg: white;
+            --card-border: #ddd;
+        }
+        
+        html.dark {
+            --primary-color: #0a2c4e;
+            --secondary-color: #d4b37e;
+            --accent-color: #0088e0;
+            --background-light: #121212;
+            --text-color: #e0e0e0;
+            --text-light: #a0a0a0;
+            --card-bg: #1e1e1e;
+            --card-border: #444;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: 'Roboto', sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: var(--background-light);
+            color: var(--text-color);
+            line-height: 1.6;
+            font-size: 16px;
+            transition: background-color 0.3s, color 0.3s;
+        }
+
+        section {
+            padding: 60px 20px;
+            max-width: 1100px;
+            margin: 0 auto;
+        }
+
+        h1, h2, h3 {
+            font-family: 'Roboto', sans-serif;
+            font-weight: 700;
+        }
+
+        h1, h2 {
+            font-size: 2.2rem;
+            color: var(--primary-color);
+            text-align: center;
+            margin: 0;
+        }
+        
+        html.dark h1, html.dark h2, html.dark h3 {
+            color: var(--text-color);
+        }
+
+        h2 {
+            margin-bottom: 40px;
+            position: relative;
+            padding-bottom: 15px;
+        }
+
+        h2::after {
+            content: '';
+            display: block;
+            width: 80px;
+            height: 4px;
+            background-color: var(--secondary-color);
+            margin: 10px auto 0;
+        }
+
+        p {
+            font-size: 1rem;
+            color: #555;
+        }
+
+        html.dark p {
+            color: #ccc;
+        }
+
+        /* Header & Navigation
+        -------------------------------------------------- */
+        .top-bar {
+            background-color: var(--primary-color);
+            padding: 8px 30px;
+            display: flex;
+            justify-content: flex-end;
+            align-items: center;
+            border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        }
+
+        .top-bar .social-icons {
+            display: flex;
+            gap: 12px;
+            align-items: center;
+        }
+
+        .top-bar .social-icons a {
+            color: white;
+            font-size: 1.6rem;
+            transition: color 0.3s, transform 0.2s;
+        }
+
+        .top-bar .social-icons a:hover {
+            color: var(--secondary-color);
+            transform: scale(1.1);
+        }
+        
+        .theme-toggle {
+            background: none;
+            border: none;
+            color: white;
+            cursor: pointer;
+            margin-left: 20px;
+            width: 24px;
+            height: 24px;
+            padding: 0;
+        }
+        .theme-icon {
+            width: 100%;
+            height: 100%;
+            stroke: white;
+        }
+        #moon-icon { display: none; }
+        html.dark #sun-icon { display: none; }
+        html.dark #moon-icon { display: block; }
+
+        header {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 15px 30px;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            position: sticky;
+            top: 0;
+            z-index: 1000;
+        }
+
+        .header-flex {
+            width: 100%;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .logo-title {
+            display: flex;
+            align-items: center;
+            gap: 15px;
+        }
+
+        .logo {
+            height: 130px;
+            animation: bounceIn 4s ease-out;
+        }
+
+        @keyframes bounceIn {
+            0% { transform: scale(0.5); opacity: 0; }
+            60% { transform: scale(1.1); opacity: 1; }
+            100% { transform: scale(1); }
+        }
+
+        .logo-title h1 {
+            font-size: 1.8rem;
+            margin: 0;
+            color: white;
+        }
+
+        .slogan {
+            font-size: 1rem;
+            font-style: italic;
+            margin: 5px 0 0;
+            color: var(--text-light);
+        }
+
+        #navLinks {
+            width: 100%;
+            margin-top: 10px;
+        }
+
+        #navLinks nav {
+            display: flex;
+            justify-content: center;
+            gap: 15px;
+        }
+
+        #navLinks a {
+            color: white;
+            text-decoration: none;
+            font-weight: 500;
+            font-size: 0.9rem;
+            padding: 8px 12px;
+            border-radius: 5px;
+            transition: background-color 0.3s, transform 0.2s;
+        }
+
+        #navLinks a:hover,
+        #navLinks a.active {
+            background-color: var(--secondary-color);
+            transform: translateY(-2px);
+        }
+
+        .menu-icon {
+            display: none;
+            font-size: 2rem;
+            cursor: pointer;
+            color: white;
+        }
+
+        /* Home Section
+        -------------------------------------------------- */
+        #home {
+            position: relative;
+            text-align: center;
+            color: white;
+            padding: 80px 20px;
+            min-height: 80vh;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            overflow: hidden;
+        }
+        
+        #home .video-background {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: -2;
+        }
+
+        #home video {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+        }
+        
+        #home .overlay {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: rgba(0, 51, 102, 0.7);
+            z-index: -1;
+        }
+
+        #home h2 {
+            color: white;
+            font-weight: 700;
+            text-shadow: 2px 2px 4px rgba(0,0,0,0.5);
+        }
+
+        #home h2::after {
+            background-color: var(--secondary-color);
+        }
+
+        #home p {
+            color: white;
+            font-size: 1rem;
+            max-width: 800px;
+            text-shadow: 1px 1px 3px rgba(0,0,0,0.5);
+        }
+
+        /* Packages Section
+        -------------------------------------------------- */
+        .packages {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+            justify-items: center;
+            align-items: stretch;
+        }
+
+        .card {
+            background: var(--card-bg);
+            border: 1px solid var(--card-border);
+            border-radius: 12px;
+            padding: 25px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+            display: flex;
+            flex-direction: column;
+        }
+
+        .card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 30px rgba(0, 0, 0, 0.1);
+        }
+
+        .card h3 {
+            font-size: 1.4rem;
+            color: var(--primary-color);
+            text-align: center;
+            margin-top: 0;
+            margin-bottom: 15px;
+        }
+        html.dark .card h3 { color: var(--secondary-color); }
+
+        .card ul {
+            list-style: none;
+            padding: 0;
+            margin: 8px 0;
+            text-align: left;
+        }
+
+        .card ul li {
+            padding: 6px 0;
+            border-bottom: 1px solid #eee;
+            color: #555;
+            font-size: 0.9rem;
+        }
+        html.dark .card ul li {
+            border-bottom-color: #333;
+            color: var(--text-light);
+        }
+
+        .card ul li:last-child {
+            border-bottom: none;
+        }
+
+        .pay-btn {
+            display: block;
+            width: 100%;
+            padding: 12px;
+            background-color: var(--accent-color);
+            color: white;
+            text-align: center;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background-color 0.3s, transform 0.2s;
+            text-decoration: none;
+        }
+
+        .pay-btn:hover {
+            background-color: #005fa3;
+            transform: translateY(-2px);
+        }
+
+        /* Styles for the separate service sections */
+        .service-details-container {
+            display: flex;
+            flex-wrap: wrap;
+            gap: 30px;
+            max-width: 800px;
+            margin: 0 auto;
+            background: var(--card-bg);
+            padding: 30px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .service-content {
+            flex: 1;
+            min-width: 300px;
+        }
+
+        .service-pay-card {
+            flex-basis: 250px;
+            padding: 20px;
+            background-color: var(--background-light);
+            border: 1px solid var(--card-border);
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0, 0, 0, 0.05);
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        .service-pay-card h3 {
+            font-size: 1.2rem;
+            color: var(--primary-color);
+            text-align: center;
+            margin-top: 0;
+        }
+        html.dark .service-pay-card h3 { color: var(--secondary-color); }
+
+        .service-pay-card p {
+            font-size: 0.9rem;
+            text-align: center;
+            margin: 10px 0;
+        }
+
+        .service-pay-card ul {
+            list-style: none;
+            padding: 0;
+            text-align: left;
+            margin: 0 0 20px;
+        }
+
+        .service-pay-card ul li {
+            font-size: 0.9rem;
+            padding: 5px 0;
+        }
+
+        /* Services Section
+        -------------------------------------------------- */
+        .services-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .service-card {
+            background: var(--card-bg);
+            border-radius: 12px;
+            padding: 25px;
+            text-align: center;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.05);
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .service-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 8px 30px rgba(0,0,0,0.1);
+        }
+        .service-card .icon {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+        .service-card h3 {
+            font-size: 1.3rem;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+        html.dark .service-card h3 { color: var(--secondary-color); }
+        .service-card p {
+            font-size: 0.9rem;
+            margin-bottom: 20px;
+        }
+        .service-card .learn-more-btn {
+            background: none;
+            border: 2px solid var(--secondary-color);
+            color: var(--secondary-color);
+            padding: 8px 16px;
+            border-radius: 8px;
+            text-decoration: none;
+            font-weight: 700;
+            transition: background-color 0.3s, color 0.3s;
+        }
+        .service-card .learn-more-btn:hover {
+            background-color: var(--secondary-color);
+            color: white;
+        }
+
+        /* Testimonials Section
+        -------------------------------------------------- */
+        #testimonials {
+            background-color: var(--primary-color);
+            color: white;
+        }
+        #testimonials h2 {
+            color: white;
+        }
+        #testimonials h2::after {
+            background-color: var(--secondary-color);
+        }
+        .testimonials-container {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+            gap: 25px;
+        }
+        .testimonial-card {
+            background: rgba(255, 255, 255, 0.1);
+            border-left: 5px solid var(--secondary-color);
+            padding: 25px;
+            border-radius: 12px;
+            transition: transform 0.3s, box-shadow 0.3s;
+        }
+        .testimonial-card:hover {
+            transform: translateY(-5px);
+            box-shadow: 0 8px 20px rgba(0,0,0,0.2);
+        }
+        .quote {
+            font-style: italic;
+            margin: 0 0 15px 0;
+            font-size: 1rem;
+            position: relative;
+            padding-left: 25px;
+        }
+        .quote::before {
+            content: '“';
+            font-family: 'Georgia', serif;
+            font-size: 3rem;
+            color: var(--secondary-color);
+            position: absolute;
+            left: -10px;
+            top: -10px;
+        }
+        .client-name {
+            font-weight: 700;
+            text-align: right;
+            color: var(--secondary-color);
+        }
+
+        /* FAQ Section
+        -------------------------------------------------- */
+        .faq-item {
+            background: var(--card-bg);
+            margin-bottom: 10px;
+            border-radius: 8px;
+            box-shadow: 0 2px 10px rgba(0,0,0,0.05);
+            opacity: 0;
+            transform: translateY(20px);
+            animation: fadeInUp 0.5s ease-out forwards;
+        }
+        .faq-item:nth-child(1) { animation-delay: 0.1s; }
+        .faq-item:nth-child(2) { animation-delay: 0.2s; }
+        .faq-item:nth-child(3) { animation-delay: 0.3s; }
+        .faq-item:nth-child(4) { animation-delay: 0.4s; }
+        .faq-item:nth-child(5) { animation-delay: 0.5s; }
+        .faq-item:nth-child(6) { animation-delay: 0.6s; }
+
+        @keyframes fadeInUp {
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        .faq-question {
+            width: 100%;
+            background: none;
+            border: none;
+            text-align: left;
+            padding: 12px 20px; /* Reduced padding */
+            font-size: 0.95rem; /* Reduced font size */
+            font-weight: 500;
+            cursor: pointer;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: var(--primary-color);
+        }
+        html.dark .faq-question { color: var(--text-color); }
+        .faq-question .icon {
+            transition: transform 0.3s ease;
+        }
+        .faq-answer {
+            max-height: 0;
+            overflow: hidden;
+            transition: max-height 0.4s ease-out;
+            padding: 0 20px;
+        }
+        .faq-answer p {
+            margin: 0;
+            padding-bottom: 15px;
+            color: #555;
+            font-size: 0.9rem; /* Reduced answer font size */
+        }
+        html.dark .faq-answer p { color: var(--text-light); }
+        .faq-item.active .faq-question .icon {
+            transform: rotate(45deg);
+        }
+        .faq-item.active .faq-answer {
+            max-height: 200px; /* Adjust as needed */
+        }
+
+        /* Contact Section
+        -------------------------------------------------- */
+        #contact {
+            background-color: var(--background-light);
+        }
+
+        .contact-container {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 30px;
+            align-items: start;
+        }
+
+        .contact-form {
+            max-width: 500px;
+            margin: 0;
+            background: var(--card-bg);
+            padding: 25px;
+            border-radius: 12px;
+            box-shadow: 0 4px 20px rgba(0, 0, 0, 0.05);
+        }
+
+        .contact-form input,
+        .contact-form textarea {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 12px;
+            border: 1px solid var(--card-border);
+            border-radius: 8px;
+            font-size: 0.9rem;
+            transition: border-color 0.3s, box-shadow 0.3s;
+            background-color: var(--background-light);
+            color: var(--text-color);
+            box-sizing: border-box;
+        }
+
+        .contact-form input:focus,
+        .contact-form textarea:focus {
+            outline: none;
+            border-color: var(--accent-color);
+            box-shadow: 0 0 5px rgba(0, 119, 200, 0.3);
+        }
+
+        .contact-form button {
+            width: 100%;
+            padding: 12px;
+            background-color: var(--primary-color);
+            color: white;
+            border: none;
+            border-radius: 8px;
+            font-size: 1rem;
+            font-weight: 700;
+            cursor: pointer;
+            transition: background-color 0.3s;
+        }
+
+        .contact-form button:hover {
+            background-color: var(--secondary-color);
+        }
+        
+        .map-container {
+            border-radius: 12px;
+            overflow: hidden;
+            box-shadow: 0 4px 20px rgba(0,0,0,0.1);
+            height: 100%;
+            min-height: 400px;
+        }
+
+        .map-container iframe {
+            width: 100%;
+            height: 100%;
+            border: 0;
+        }
+
+        /* Sliding Banner
+        -------------------------------------------------- */
+        .sliding-banner {
+            background-color: var(--primary-color);
+            color: white;
+            padding: 20px 0;
+            overflow: hidden;
+            white-space: nowrap;
+        }
+        .marquee-container {
+            display: flex;
+        }
+        .marquee {
+            display: inline-block;
+            animation: marquee 30s linear infinite;
+        }
+        .marquee span {
+            font-size: 1.2rem;
+            font-weight: 500;
+            margin: 0 25px;
+            color: var(--text-light);
+        }
+        .marquee span i {
+            color: var(--secondary-color);
+            margin-right: 8px;
+        }
+        @keyframes marquee {
+            0% { transform: translateX(0%); }
+            100% { transform: translateX(-100%); }
+        }
+
+        /* Footer
+        -------------------------------------------------- */
+        footer {
+            background-color: var(--primary-color);
+            color: white;
+            text-align: center;
+            padding: 15px;
+        }
+
+        /* Floating WhatsApp button styles */
+        .whatsapp-chat {
+            position: fixed;
+            bottom: 20px;
+            right: 20px;
+            background-color: transparent;
+            width: 50px;
+            height: 50px;
+            display: block;
+            box-shadow: 0 4px 8px rgba(0, 0, 0, 0.3);
+            z-index: 999;
+            transition: transform 0.3s;
+            border-radius: 50%;
+        }
+
+        .whatsapp-chat:hover {
+            transform: scale(1.1);
+        }
+
+        .whatsapp-icon-img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+
+        /* Modal Pop-up Styles
+        -------------------------------------------------- */
+        .modal {
+            display: none;
+            position: fixed;
+            z-index: 1000;
+            left: 0;
+            top: 0;
+            width: 100%;
+            height: 100%;
+            overflow: auto;
+            background-color: rgba(0, 0, 0, 0.6);
+            padding-top: 50px;
+            animation: fadeIn 0.3s ease-out;
+        }
+
+        @keyframes fadeIn {
+            from { opacity: 0; }
+            to { opacity: 1; }
+        }
+
+        .modal-content {
+            background-color: var(--card-bg);
+            margin: 5% auto;
+            padding: 25px;
+            border-radius: 12px;
+            max-width: 450px;
+            box-shadow: 0 10px 25px rgba(0, 0, 0, 0.2);
+            position: relative;
+            animation: slideUp 0.4s ease-out;
+        }
+
+        @keyframes slideUp {
+            from { transform: translateY(50px); opacity: 0; }
+            to { transform: translateY(0); opacity: 1; }
+        }
+
+        .close-btn {
+            color: #aaa;
+            font-size: 28px;
+            font-weight: bold;
+            position: absolute;
+            top: 10px;
+            right: 15px;
+            cursor: pointer;
+            transition: color 0.2s;
+        }
+
+        .close-btn:hover,
+        .close-btn:focus {
+            color: var(--primary-color);
+        }
+
+        #requirementsForm {
+            display: flex;
+            flex-direction: column;
+        }
+
+        #requirementsForm label {
+            font-weight: 500;
+            margin-top: 12px;
+            color: var(--primary-color);
+        }
+        html.dark #requirementsForm label { color: var(--text-color); }
+
+        #requirementsForm input, #requirementsForm textarea {
+            width: 100%;
+            padding: 8px;
+            margin-top: 8px;
+            border: 1px solid #ccc;
+            border-radius: 6px;
+            font-size: 0.9rem;
+            box-sizing: border-box;
+        }
+
+        /* --- Attractive Features for the About Page --- */
+        .hero-about {
+            text-align: center;
+            color: white;
+            padding: 80px 20px;
+            background: linear-gradient(rgba(0, 51, 102, 0.85), rgba(0, 51, 102, 0.85)), url('about.png') no-repeat center center/cover;
+            border-radius: 0 0 15px 15px;
+            margin-bottom: 40px;
+        }
+        .hero-about h1 {
+            font-size: 2.8rem;
+            color: white;
+            text-shadow: 2px 2px 5px rgba(0,0,0,0.5);
+            margin: 0;
+        }
+        .hero-about p {
+            font-size: 1.2rem;
+            max-width: 800px;
+            margin: 15px auto 0;
+            color: #f0f0f0;
+        }
+        .about-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 50px;
+            align-items: center;
+            margin-top: 20px;
+        }
+        .about-grid .text-content h3 {
+            font-size: 1.8rem;
+            color: var(--primary-color);
+            margin-top: 0;
+        }
+        .about-grid img {
+            width: 100%;
+            border-radius: 12px;
+            box-shadow: 0 10px 30px rgba(0,0,0,0.1);
+        }
+        .values-section {
+            background-color: var(--card-bg);
+            border-radius: 15px;
+        }
+        .values-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 30px;
+            margin-top: 50px;
+        }
+        .value-card {
+            text-align: center;
+            padding: 25px;
+        }
+        .value-card .icon {
+            font-size: 2.5rem;
+            color: var(--secondary-color);
+            margin-bottom: 15px;
+        }
+        .value-card h3 {
+            font-size: 1.4rem;
+            margin-bottom: 10px;
+            color: var(--primary-color);
+        }
+        .cta-section {
+            background-color: var(--primary-color);
+            text-align: center;
+            padding: 60px 20px;
+            color: white;
+            border-radius: 15px;
+            margin-top: 40px;
+        }
+        .cta-section h2 {
+            color: white;
+        }
+        .cta-btn {
+            display: inline-block;
+            padding: 15px 30px;
+            background-color: var(--secondary-color);
+            color: var(--primary-color);
+            font-weight: 700;
+            border-radius: 8px;
+            text-decoration: none;
+            transition: transform 0.3s, background-color 0.3s;
+            margin-top: 10px;
+        }
+        .cta-btn:hover {
+            background-color: #dcb981;
+            transform: translateY(-3px);
+        }
+
+        /* Media Queries for Mobile Responsiveness
+        -------------------------------------------------- */
+        @media (max-width: 768px) {
+            /* Updated Mobile Header Styling */
+            header {
+                padding: 15px 20px;
+            }
+
+            .header-flex {
+                flex-direction: row; /* Keep logo and menu icon on same line */
+                justify-content: space-between; /* Space them out */
+                align-items: center;
+                width: 100%;
+            }
+            
+            .logo-title {
+                flex-direction: row; /* Keep logo and title on same line */
+                text-align: left;
+                width: auto;
+                gap: 10px;
+            }
+
+            .logo {
+                height: 50px; /* Smaller logo for mobile */
+            }
+
+            .logo-title h1 {
+                font-size: 1.2rem; /* Smaller title */
+                margin: 0;
+            }
+
+            .slogan {
+                display: none; /* Hide slogan on small screens to save space */
+            }
+
+            /* Updated Menu Icon Position */
+            .menu-icon {
+                display: block;
+                font-size: 1.8rem;
+                position: static; /* Remove absolute positioning */
+            }
+
+            /* Updated Mobile Navigation */
+            #navLinks {
+                margin-top: 15px;
+                display: none;
+                width: 100%;
+            }
+            
+            .nav-active {
+                display: block !important;
+            }
+
+            #navLinks nav {
+                flex-direction: column;
+                text-align: center;
+                width: 100%;
+                background-color: var(--primary-color);
+            }
+
+            #navLinks a {
+                padding: 15px;
+                border-radius: 0;
+                border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+                font-size: 1.1rem;
+            }
+            
+            /* Other Mobile Styles */
+            h2 {
+                font-size: 1.8rem;
+                text-align: center;
+            }
+            
+            h2::after {
+                margin: 8px auto 0;
+            }
+
+            #home h2 {
+                font-size: 2.2rem;
+                text-align: center;
+            }
+
+            #home p {
+                font-size: 0.9rem;
+            }
+
+            .card h3 {
+                font-size: 1.2rem;
+            }
+            
+            .packages, #services ul {
+                gap: 15px;
+            }
+
+            .service-details-container {
+                flex-direction: column;
+            }
+
+            .service-pay-card {
+                min-width: unset;
+                flex-basis: auto;
+            }
+
+            .contact-container {
+                grid-template-columns: 1fr;
+            }
+
+            .about-grid {
+                grid-template-columns: 1fr;
+            }
+            .hero-about h1 {
+                font-size: 2.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="top-bar">
+        <div class="social-icons">
+            <a href="https://www.facebook.com/laizer.cipc?mibextid=ZbWKwL" target="_blank" aria-label="Follow us on Facebook"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/laizer_holdings_pty_" target="_blank" aria-label="Follow us on Instagram"><i class="fab fa-instagram"></i></a>
+            <a href="https://www.linkedin.com/in/abide-masiya-8a0bb4331?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="Connect on LinkedIn"><i class="fab fa-linkedin-in"></i></a>
+        </div>
+        <button class="theme-toggle" id="theme-toggle" aria-label="Toggle dark mode">
+            <svg id="sun-icon" class="theme-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="5"></circle><line x1="12" y1="1" x2="12" y2="3"></line><line x1="12" y1="21" x2="12" y2="23"></line><line x1="4.22" y1="4.22" x2="5.64" y2="5.64"></line><line x1="18.36" y1="18.36" x2="19.78" y2="19.78"></line><line x1="1" y1="12" x2="3" y2="12"></line><line x1="21" y1="12" x2="23" y2="12"></line><line x1="4.22" y1="19.78" x2="5.64" y2="18.36"></line><line x1="18.36" y1="5.64" x2="19.78" y2="4.22"></line></svg>
+            <svg id="moon-icon" class="theme-icon" xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"></path></svg>
+        </button>
+    </div>
+
+    <header>
+        <div class="header-flex">
+            <div class="logo-title">
+                <img src="logo.png" alt="Laizer Holdings Logo" class="logo" />
+                <div>
+                    <h1>Laizer Consultation</h1>
+                    <p class="slogan">Effortless Compliance, Every Time</p>
+                </div>
+            </div>
+            <div class="menu-icon" onclick="toggleMenu()">
+                <i class="fas fa-bars"></i>
+            </div>
+        </div>
+        <div id="navLinks">
+            <nav>
+                <a href="#home">Home</a>
+                <a href="#about">About</a>
+                <a href="#services">Services</a>
+                <a href="#packages">Packages</a>
+                <a href="#contact">Contact</a>
+            </nav>
+        </div>
+    </header>
+
+    <main>
+        <div id="main-content">
+            <section id="home">
+                <div class="video-background">
+                     <video autoplay loop muted playsinline>
+                        <source src="background.mp4" type="video/mp4">
+                        Your browser does not support the video tag.
+                    </video>
+                </div>
+                <div class="overlay"></div>
+                <h2><i class="fas fa-home"></i> Welcome to Laizer Consultation</h2>
+                <p>Laizer Holdings offers a comprehensive suite of professional services to help businesses navigate compliance and administration. We manage essential company details, including beneficial ownership, director additions/removals, and address changes, as well as handling annual returns. Our tax and government services include securing a Tax Pin/Clearance and managing SARS Tax Returns, alongside registering your business on the Central Supplier Database (CSD). We also specialize in obtaining B-BBEE Certification, COIDA/Letter of Good Standing, and CIDB Registration. For non-profit organizations, we assist with NPO Registration. We further support the housing sector with NHBRC Registration and Renewal, including guidance for the NHBRC Exam Scope. Our goal is to provide a single, reliable source for all your business needs.</p>
+            </section>
+
+            <section id="packages">
+                <h2><i class="fas fa-tags"></i> Our Packages</h2>
+                <div class="packages">
+                    <div class="card">
+                        <h3>BASIC – R700</h3>
+                        <ul>
+                            <li>Company Registration</li>
+                            <li>Moi & Incorporation</li>
+                            <li>B-BBEE</li>
+                            <li>Csd</li>
+                            <li>Tax Clearance</li>
+                            <li>Logo Design</li>
+                        </ul>
+                        <form action="https://www.payfast.co.za/eng/process" method="post" class="package-form">
+                            <input type="hidden" name="merchant_id" value="21317716" />
+                            <input type="hidden" name="merchant_key" value="fxcsbj1ytxtyz" />
+                            <input type="hidden" name="amount" value="700.00" />
+                            <input type="hidden" name="item_name" value="BASIC Package" />
+                            <button type="button" class="pay-btn open-modal-btn" data-package="basic">Pay Now</button>
+                        </form>
+                    </div>
+
+                    <div class="card">
+                        <h3>STANDARD – R900</h3>
+                        <ul>
+                            <li>Company Registration</li>
+                            <li>Moi & Incorporation</li>
+                            <li>B-BBEE</li>
+                            <li>Csd</li>
+                            <li>Tax Clearance</li>
+                            <li>Beneficial Ownership</li>
+                            <li>Bank Account</li>
+                            <li>Logo Design</li>
+                        </ul>
+                        <form action="https://www.payfast.co.za/eng/process" method="post" class="package-form">
+                            <input type="hidden" name="merchant_id" value="21317716" />
+                            <input type="hidden" name="merchant_key" value="fxcsbj1ytxtyz" />
+                            <input type="hidden" name="amount" value="900.00" />
+                            <input type="hidden" name="item_name" value="STANDARD Package" />
+                            <button type="button" class="pay-btn open-modal-btn" data-package="standard">Pay Now</button>
+                        </form>
+                    </div>
+
+                    <div class="card">
+                        <h3>PREMIUM – R1800</h3>
+                        <ul>
+                            <li>Company Registration</li>
+                            <li>Moi & Incorporation</li>
+                            <li>Business Profile</li>
+                            <li>Business Bank Account</li>
+                            <li>Share Certificate</li>
+                            <li>Beneficial Ownership</li>
+                            <li>B-BBEE </li>
+                            <li>Csd</li>
+                            <li>Bank Account</li>
+                            <li>Logo Design</li>
+                        </ul>
+                        <form action="https://www.payfast.co.za/eng/process" method="post" class="package-form">
+                            <input type="hidden" name="merchant_id" value="21317716" />
+                            <input type="hidden" name="merchant_key" value="fxcsbj1ytxtyz" />
+                            <input type="hidden" name="amount" value="1800.00" />
+                            <input type="hidden" name="item_name" value="PREMIUM Package" />
+                            <button type="button" class="pay-btn open-modal-btn" data-package="premium">Pay Now</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section id="testimonials">
+                <h2><i class="fas fa-comments"></i> What Our Clients Say</h2>
+                <div class="testimonials-container">
+                    <div class="testimonial-card">
+                        <p class="quote">"The process was seamless and incredibly fast. Laizer Consultation handled everything professionally, and I had my company registered in no time."</p>
+                        <p class="client-name">- John Doe, CEO of Tech Solutions</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="quote">"Navigating the CSD registration was a headache until I found these guys. Highly recommended for any business looking to work with the government."</p>
+                        <p class="client-name">- Jane Smith, Founder of Creative Works</p>
+                    </div>
+                    <div class="testimonial-card">
+                        <p class="quote">"Excellent service from start to finish. They secured our Tax Clearance Certificate quickly, which was crucial for our operations."</p>
+                        <p class="client-name">- Michael Brown, Director at BuildRight Construction</p>
+                    </div>
+                </div>
+            </section>
+
+            <section id="faq">
+                <h2><i class="fas fa-question-circle"></i> Frequently Asked Questions</h2>
+                <div class="faq-container">
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What is Company Registration?</span>
+                            <i class="fas fa-plus icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Company Registration is the process of legally establishing your business as a (Pty) Ltd company with the CIPC. This gives your business its own legal identity. We handle all the paperwork to ensure it's done correctly.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>Why do I need CSD Registration?</span>
+                            <i class="fas fa-plus icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>The Central Supplier Database (CSD) is a government requirement for any business that wants to provide goods or services to the public sector. We ensure your company is properly registered so you can apply for government tenders.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What is Beneficial Ownership (BO) and is it mandatory?</span>
+                            <i class="fas fa-plus icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Beneficial Ownership is the CIPC requirement to declare the natural person(s) who ultimately own or control the company. It is a mandatory step for all companies in South Africa to ensure transparency and prevent financial crime.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How does the NHBRC Exam Prep help me?</span>
+                            <i class="fas fa-plus icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Our NHBRC Q&A materials provide you with a comprehensive study guide focused on the key topics of the technical exam. This helps you prepare effectively, increasing your chances of passing and becoming a registered home builder.</p>
+                        </div>
+                    </div>
+                    <div class="faq-item">
+                        <button class="faq-question">
+                            <span>How long does it take to get a Tax Clearance Certificate?</span>
+                            <i class="fas fa-plus icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>If all your company's tax affairs are in order with SARS, we can typically obtain your Tax Compliance Status (TCS) PIN within 24-48 hours.</p>
+                        </div>
+                    </div>
+                     <div class="faq-item">
+                        <button class="faq-question">
+                            <span>What does the Logo Design service include?</span>
+                            <i class="fas fa-plus icon"></i>
+                        </button>
+                        <div class="faq-answer">
+                            <p>Our service provides you with two professional logo designs for one price: a versatile flat logo for general use and a dynamic 3D logo for standout marketing visuals. It's a complete branding solution to make your business look professional.</p>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section id="contact">
+                <h2><i class="fas fa-envelope"></i> Contact Us</h2>
+                <div class="contact-container">
+                    <form class="contact-form" action="https://formspree.io/f/abidemonareng@gmail.com" method="POST">
+                        <input type="text" name="name" placeholder="Your Name" required />
+                        <input type="email" name="email" placeholder="Your Email" required />
+                        <textarea name="message" placeholder="Your Message" rows="5" required></textarea>
+                        <button type="submit">Send Message</button>
+                    </form>
+                    <div class="map-container">
+                        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3576.732386261543!2d28.21582631503204!3d-26.30219998339328!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1e951c136513346b%3A0x55364e526496365b!2sChris%20Hani%20Crossing!5e0!3m2!1sen!2sza!4v1692895699858!5m2!1sen!2sza" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                    </div>
+                </div>
+            </section>
+        </div>
+
+        <div id="about-content" style="display: none;">
+            <section class="hero-about">
+                <h1>Your Expert Partner in South African Business Compliance</h1>
+                <p>"Effortless Compliance, Every Time." It's not just our slogan—it's our promise to you.</p>
+            </section>
+
+            <section id="our-story">
+                <h2>Our Story</h2>
+                <div class="about-grid">
+                    <div class="text-content">
+                        <h3>Our Mission: Simplifying Your Path to Success</h3>
+                        <p><strong>Laizer Consultation was founded on a simple principle:</strong> entrepreneurs should be free to build their businesses, not be buried in paperwork. We saw the complex, ever-changing landscape of CIPC, SARS, and other industry regulations in South Africa as a significant hurdle for businesses of all sizes.</p>
+                        <p>Our mission is to be your single, reliable source for all compliance needs. We expertly manage everything from company registration and annual returns to specialized requirements like NHBRC, COIDA, and B-BBEE certification. We handle the complexities so you can focus on innovation, growth, and serving your customers with confidence.</p>
+                    </div>
+                    <div>
+                        <img src="about.png" alt="Professional team collaborating in an office">
+                    </div>
+                </div>
+            </section>
+            
+            <section class="values-section">
+                <h2>The Principles That Guide Us</h2>
+                <div class="values-grid">
+                    <div class="value-card">
+                        <div class="icon"><i class="fas fa-shield-alt"></i></div>
+                        <h3>Integrity</h3>
+                        <p>We operate with complete transparency and honesty. Your trust is our foundation, and we are committed to upholding the highest ethical standards in every task we undertake.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="icon"><i class="fas fa-rocket"></i></div>
+                        <h3>Efficiency</h3>
+                        <p>We respect your time and urgency. Our processes are streamlined to deliver fast, accurate results, ensuring your business stays compliant and agile without unnecessary delays.</p>
+                    </div>
+                    <div class="value-card">
+                        <div class="icon"><i class="fas fa-star"></i></div>
+                        <h3>Excellence</h3>
+                        <p>We are dedicated to the highest quality of service. Our team's expertise ensures that your compliance is not just completed, but completed correctly and professionally every time.</p>
+                    </div>
+                     <div class="value-card">
+                        <div class="icon"><i class="fas fa-handshake"></i></div>
+                        <h3>Partnership</h3>
+                        <p>We see ourselves as an extension of your team. Your business goals are our goals, and we are dedicated to providing the proactive support you need to succeed.</p>
+                    </div>
+                </div>
+            </section>
+
+            <section class="cta-section">
+                <h2>Let Us Handle the Paperwork, While You Build Your Empire.</h2>
+                <p>Ready to experience effortless compliance? Explore our services and let's get started today.</p>
+                <a href="#services" id="cta-view-services" class="cta-btn">Explore Our Services</a>
+            </section>
+        </div>
+
+        <div id="services-content" style="display: none;">
+            <section id="services-hub">
+                <h2><i class="fas fa-briefcase"></i> Our Core Services</h2>
+                <div class="services-grid">
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-building"></i></div>
+                        <h3>Company Registration</h3>
+                        <p>Legally establish your business with CIPC.</p>
+                        <a href="#packages" class="learn-more-btn">View Packages</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-database"></i></div>
+                        <h3>CSD Registration</h3>
+                        <p>Get registered to tender for government contracts.</p>
+                        <a href="#csd-registration-details" class="learn-more-btn">Learn More</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-certificate"></i></div>
+                        <h3>B-BBEE Certificate</h3>
+                        <p>New applications and annual renewals.</p>
+                        <a href="#b-bbee-renewal-details" class="learn-more-btn">Learn More</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-file-invoice-dollar"></i></div>
+                        <h3>Tax Clearance (TCS)</h3>
+                        <p>Prove your tax affairs are in good standing with SARS.</p>
+                        <a href="#tax-clearance-details" class="learn-more-btn">Learn More</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-hard-hat"></i></div>
+                        <h3>COIDA Registration</h3>
+                        <p>Mandatory insurance for employees.</p>
+                        <a href="#coida-registration-details" class="learn-more-btn">Learn More</a>
+                    </div>
+                    <div class="service-card">
+                        <div class="icon"><i class="fas fa-home"></i></div>
+                        <h3>NHBRC Registration</h3>
+                        <p>For all home builders and construction companies.</p>
+                        <a href="#nhbrc-registration-details" class="learn-more-btn">Learn More</a>
+                    </div>
+                </div>
+            </section>
+            
+            <section id="beneficial-ownership-details">
+                <h2><i class="fas fa-handshake"></i> Beneficial Ownership Registration</h2>
+                <div class="service-details-container">
+                    <div class="service-content">
+                        <h3>What is Beneficial Ownership?</h3>
+                        <p>Beneficial Ownership (BO) refers to the <strong>natural person(s)</strong> who ultimately own or control a company, even if they aren't the registered shareholders. In South Africa, CIPC regulations require companies to disclose this information to prevent financial crimes like money laundering and to ensure complete transparency.</p>
+                        <p>At Laizer Consultation, we understand these regulations can be complex and time-consuming. We simplify this process, providing a seamless and professional service to ensure your Beneficial Ownership status is fully compliant with CIPC requirements. With us, you get the peace of mind that your business is operating with integrity and transparency, protecting you from non-compliance penalties.</p>
+                    </div>
+                    <div class="service-pay-card">
+                        <h3>Get Compliant for R280</h3>
+                        <p><strong>Requirements:</strong></p>
+                        <ul>
+                            <li>ID: A clear copy of the ID or passport of the beneficial owner(s).</li>
+                            <li>Cor14.3 Company Certificate: A copy of your company's official registration certificate.</li>
+                            <li>Email & Phone Number: The valid contact details for the beneficial owner.</li>
+                        </ul>
+                        <form action="https://www.payfast.co.za/eng/process" method="post" class="package-form">
+                            <input type="hidden" name="merchant_id" value="21317716" />
+                            <input type="hidden" name="merchant_key" value="fxcsbj1ytxtyz" />
+                            <input type="hidden" name="amount" value="280.00" />
+                            <input type="hidden" name="item_name" value="Beneficial Ownership" />
+                            <button type="button" class="pay-btn open-modal-btn" data-package="beneficial_ownership">Pay Now</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section id="nhbrc-registration-details">
+                <h2><i class="fas fa-home"></i> NHBRC Registration</h2>
+                <div class="service-details-container">
+                    <div class="service-content">
+                        <h3>What is NHBRC Registration?</h3>
+                        <p>The National Home Builders Registration Council (NHBRC) is a regulatory body of the home building industry. Registration is mandatory for anyone in the business of building homes. We manage the entire application process, ensuring you meet all the requirements for certification.</p>
+                    </div>
+                    <div class="service-pay-card">
+                        <h3>Get Registered for R1800</h3>
+                        <p><strong>Requirements:</strong></p>
+                        <ul>
+                            <li>Company certificate</li>
+                            <li>Certified ID of the directors</li>
+                            <li>Annual Return Report from CIPC</li>
+                            <li>ID copy for the exam writer</li>
+                            <li>Business Account</li>
+                        </ul>
+                        <form action="https://www.payfast.co.za/eng/process" method="post" class="package-form">
+                            <input type="hidden" name="merchant_id" value="21317716" />
+                            <input type="hidden" name="merchant_key" value="fxcsbj1ytxtyz" />
+                            <input type="hidden" name="amount" value="1800.00" />
+                            <input type="hidden" name="item_name" value="NHBRC Registration" />
+                            <button type="button" class="pay-btn open-modal-btn" data-package="nhbrc_registration">Pay Now</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section id="nhbrc-exam-prep-details">
+                <h2><i class="fas fa-graduation-cap"></i> NHBRC Exam Prep: Q&A Materials</h2>
+                <div class="service-details-container">
+                    <div class="service-content">
+                        <h3>What is the NHBRC Exam Scope?</h3>
+                        <p>Preparing for the NHBRC Technical Competency Exam is a critical step for aspiring builders. Our comprehensive <strong>NHBRC Questions and Answers</strong> service is specifically designed to help you pass with confidence. We provide a focused set of materials that cover the key areas of the exam scope, giving you the knowledge and insights you need to succeed.</p>
+                    </div>
+                    <div class="service-pay-card">
+                        <h3>Get Access for R350</h3>
+                        <p><strong>Requirements:</strong></p>
+                        <ul>
+                            <li>Email Address: To receive the digital Q&A material.</li>
+                        </ul>
+                        <form action="https://www.payfast.co.za/eng/process" method="post" class="package-form">
+                            <input type="hidden" name="merchant_id" value="21317716" />
+                            <input type="hidden" name="merchant_key" value="fxcsbj1ytxtyz" />
+                            <input type="hidden" name="amount" value="350.00" />
+                            <input type="hidden" name="item_name" value="NHBRC Q&A" />
+                            <button type="button" class="pay-btn open-modal-btn" data-package="nhbrc_qa">Pay Now</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section id="tax-clearance-details">
+                <h2><i class="fas fa-file-invoice-dollar"></i> Tax Clearance Certificate (TCS)</h2>
+                <div class="service-details-container">
+                    <div class="service-content">
+                        <h3>What is a Tax Clearance Certificate?</h3>
+                        <p>A valid Tax Clearance Certificate, now known as a Tax Compliance Status (TCS) PIN, is essential for any business operating in South Africa. It proves that your tax affairs are in order with SARS. We streamline the entire process for you, ensuring a swift and accurate application.</p>
+                    </div>
+                    <div class="service-pay-card">
+                        <h3>Get Tax Clearance for R250</h3>
+                        <p><strong>Requirements:</strong></p>
+                        <ul>
+                            <li>Company Registration Number or Cor14.3 Company Certificate</li>
+                        </ul>
+                        <form action="https://www.payfast.co.za/eng/process" method="post" class="package-form">
+                            <input type="hidden" name="merchant_id" value="21317716" />
+                            <input type="hidden" name="merchant_key" value="fxcsbj1ytxtyz" />
+                            <input type="hidden" name="amount" value="250.00" />
+                            <input type="hidden" name="item_name" value="Tax Clearance Certificate" />
+                            <button type="button" class="pay-btn open-modal-btn" data-package="tax_clearance">Pay Now</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section id="b-bbee-renewal-details">
+                <h2><i class="fas fa-certificate"></i> B-BBEE Certificate / Renewal</h2>
+                <div class="service-details-container">
+                    <div class="service-content">
+                        <h3>What is a B-BBEE Certificate?</h3>
+                        <p>A Broad-Based Black Economic Empowerment (B-BBEE) certificate is crucial for businesses in South Africa to demonstrate their commitment to economic transformation. It is often a requirement for securing contracts with both government and private sector entities. We assist with both new applications and annual renewals, ensuring your certificate is accurate and up-to-date.</p>
+                    </div>
+                    <div class="service-pay-card">
+                        <h3>Get Certified for R250</h3>
+                        <p><strong>Requirements:</strong></p>
+                        <ul>
+                            <li>CIPC Logins</li>
+                        </ul>
+                        <form action="https://www.payfast.co.za/eng/process" method="post" class="package-form">
+                            <input type="hidden" name="merchant_id" value="21317716" />
+                            <input type="hidden" name="merchant_key" value="fxcsbj1ytxtyz" />
+                            <input type="hidden" name="amount" value="250.00" />
+                            <input type="hidden" name="item_name" value="B-BBEE Renewal" />
+                            <button type="button" class="pay-btn open-modal-btn" data-package="b_bbee_renewal">Pay Now</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section id="csd-registration-details">
+                <h2><i class="fas fa-database"></i> CSD Registration</h2>
+                <div class="service-details-container">
+                    <div class="service-content">
+                        <h3>What is CSD Registration?</h3>
+                        <p>Registering on the Central Supplier Database (CSD) is a vital step for any business looking to work with the South African government. This single, unified database serves as the official source of all supplier information for government departments. We simplify the entire process, ensuring your business is correctly registered with all necessary documentation, including tax and company details. By using our service, you gain a verified CSD number and reference, which is essential for tendering on government contracts and establishing your credibility as a reliable supplier.</p>
+                    </div>
+                    <div class="service-pay-card">
+                        <h3>Get Registered for R250</h3>
+                        <p><strong>Requirements:</strong></p>
+                        <ul>
+                            <li>Cellphone Number for OTP</li>
+                            <li>ID or Company Registration Number</li>
+                            <li>Bank Account Information</li>
+                            <li>Directors/Members Information</li>
+                        </ul>
+                        <form action="https://www.payfast.co.za/eng/process" method="post" class="package-form">
+                            <input type="hidden" name="merchant_id" value="21317716" />
+                            <input type="hidden" name="merchant_key" value="fxcsbj1ytxtyz" />
+                            <input type="hidden" name="amount" value="250.00" />
+                            <input type="hidden" name="item_name" value="CSD Registration" />
+                            <button type="button" class="pay-btn open-modal-btn" data-package="csd_registration">Pay Now</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section id="coida-registration-details">
+                <h2><i class="fas fa-hard-hat"></i> COIDA Registration</h2>
+                <div class="service-details-container">
+                    <div class="service-content">
+                        <h3>What is COIDA Registration?</h3>
+                        <p>Registration with the Compensation Fund for Occupational Injuries and Diseases (COIDA) is mandatory for all employers. It provides insurance coverage for employees who are injured on duty or contract occupational diseases. We handle the entire registration process, ensuring you receive your Letter of Good Standing and remain compliant.</p>
+                    </div>
+                    <div class="service-pay-card">
+                        <h3>Get Compliant for R3000</h3>
+                        <p><strong>Requirements:</strong></p>
+                        <ul>
+                            <li>Cor14.3 (Company Certificate)</li>
+                            <li>ID Copy of Director(s)</li>
+                            <li>Bank Confirmation Letter</li>
+                        </ul>
+                        <form action="https://www.payfast.co.za/eng/process" method="post" class="package-form">
+                            <input type="hidden" name="merchant_id" value="21317716" />
+                            <input type="hidden" name="merchant_key" value="fxcsbj1ytxtyz" />
+                            <input type="hidden" name="amount" value="3000.00" />
+                            <input type="hidden" name="item_name" value="COIDA Registration" />
+                            <button type="button" class="pay-btn open-modal-btn" data-package="coida_registration">Pay Now</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section id="company-reinstatement-details">
+                <h2><i class="fas fa-sync-alt"></i> Company Re-instatement</h2>
+                <div class="service-details-container">
+                    <div class="service-content">
+                        <h3>What is Company Re-instatement?</h3>
+                        <p>If your company has been de-registered by the CIPC for non-compliance (usually due to failing to file annual returns), it can be re-instated. This process restores the company to the official register, allowing it to trade legally again. We handle the application and all necessary paperwork to get your business back in good standing.</p>
+                    </div>
+                    <div class="service-pay-card">
+                        <h3>Reinstate for R750</h3>
+                        <p><strong>Requirements:</strong></p>
+                        <ul>
+                            <li>Cor14.3 Doc (Company Certificate)</li>
+                        </ul>
+                        <form action="https://www.payfast.co.za/eng/process" method="post" class="package-form">
+                            <input type="hidden" name="merchant_id" value="21317716" />
+                            <input type="hidden" name="merchant_key" value="fxcsbj1ytxtyz" />
+                            <input type="hidden" name="amount" value="750.00" />
+                            <input type="hidden" name="item_name" value="Company Re-instatement" />
+                            <button type="button" class="pay-btn open-modal-btn" data-package="company_reinstatement">Pay Now</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+
+            <section id="annual-returns-details">
+                <h2><i class="fas fa-calendar-alt"></i> Annual Returns</h2>
+                <div class="service-details-container">
+                    <div class="service-content">
+                        <h3>What are Annual Returns?</h3>
+                        <p>Every company registered with the CIPC is required to file an annual return to confirm that it is still active and to update its information. Failing to do so can lead to penalties and eventual de-registration. We ensure your annual returns are filed correctly and on time, keeping your company compliant and avoiding any legal issues.</p>
+                    </div>
+                    <div class="service-pay-card">
+                        <h3>File for R250</h3>
+                        <p><strong>Requirements:</strong></p>
+                        <ul>
+                            <li>Company Registration Number</li>
+                        </ul>
+                        <form action="https://www.payfast.co.za/eng/process" method="post" class="package-form">
+                            <input type="hidden" name="merchant_id" value="21317716" />
+                            <input type="hidden" name="merchant_key" value="fxcsbj1ytxtyz" />
+                            <input type="hidden" name="amount" value="250.00" />
+                            <input type="hidden" name="item_name" value="Annual Returns" />
+                            <button type="button" class="pay-btn open-modal-btn" data-package="annual_returns">Pay Now</button>
+                        </form>
+                    </div>
+                </div>
+            </section>
+        </div>
+    </main>
+
+    <section class="sliding-banner">
+        <div class="marquee-container">
+            <div class="marquee">
+                <span><i class="fas fa-building"></i> Company Registration</span>
+                <span><i class="fas fa-database"></i> CSD Registration</span>
+                <span><i class="fas fa-certificate"></i> B-BBEE Certification</span>
+                <span><i class="fas fa-file-invoice-dollar"></i> Tax Clearance</span>
+                <span><i class="fas fa-handshake"></i> Beneficial Ownership</span>
+                <span><i class="fas fa-graduation-cap"></i> NHBRC Prep</span>
+                <span><i class="fas fa-sync-alt"></i> Company Re-instatement</span>
+                <span><i class="fas fa-calendar-alt"></i> Annual Returns</span>
+                <span><i class="fas fa-hard-hat"></i> COIDA Registration</span>
+                <span><i class="fas fa-home"></i> NHBRC Registration</span>
+            </div>
+            <div class="marquee">
+                <span><i class="fas fa-building"></i> Company Registration</span>
+                <span><i class="fas fa-database"></i> CSD Registration</span>
+                <span><i class="fas fa-certificate"></i> B-BBEE Certification</span>
+                <span><i class="fas fa-file-invoice-dollar"></i> Tax Clearance</span>
+                <span><i class="fas fa-handshake"></i> Beneficial Ownership</span>
+                <span><i class="fas fa-graduation-cap"></i> NHBRC Prep</span>
+                <span><i class="fas fa-sync-alt"></i> Company Re-instatement</span>
+                <span><i class="fas fa-calendar-alt"></i> Annual Returns</span>
+                <span><i class="fas fa-hard-hat"></i> COIDA Registration</span>
+                <span><i class="fas fa-home"></i> NHBRC Registration</span>
+            </div>
+        </div>
+    </section>
+
+    <footer>
+        <p>&copy; 2025 Laizer Consultation (Pty) Ltd | All rights reserved</p>
+    </footer>
+
+    <a href="https://wa.me/27713935250" class="whatsapp-chat" target="_blank" title="Chat on WhatsApp">
+        <img src="whatsapp-icon.png" alt="WhatsApp" class="whatsapp-icon-img">
+    </a>
+
+    <div id="requirementsModal" class="modal">
+        <div class="modal-content">
+            <span class="close-btn">&times;</span>
+            <h2 id="modal-title"></h2>
+            <form id="requirementsForm">
+                <div id="formFields"></div>
+                <button type="submit" class="pay-btn">Proceed to Payment</button>
+            </form>
+        </div>
+    </div>
+
+    <script>
+        // Toggle the mobile navigation menu
+        function toggleMenu() {
+            var nav = document.getElementById("navLinks");
+            var icon = document.querySelector(".menu-icon i");
+            nav.classList.toggle('nav-active');
+            if (nav.classList.contains('nav-active')) {
+                icon.classList.remove("fa-bars");
+                icon.classList.add("fa-times");
+            } else {
+                icon.classList.remove("fa-times");
+                icon.classList.add("fa-bars");
+            }
+        }
+        
+        // Handle all page logic after the DOM is loaded
+        document.addEventListener('DOMContentLoaded', () => {
+            const navLinks = document.querySelectorAll('#navLinks nav a');
+            const mainContent = document.getElementById('main-content');
+            const servicesContent = document.getElementById('services-content');
+            const aboutContent = document.getElementById('about-content');
+            const ctaButton = document.getElementById('cta-view-services');
+
+            function showPage(pageId, isInternalLink = false) {
+                mainContent.style.display = 'none';
+                servicesContent.style.display = 'none';
+                aboutContent.style.display = 'none';
+
+                navLinks.forEach(nav => nav.classList.remove('active'));
+                
+                let activeLink;
+
+                if (pageId === '#services') {
+                    servicesContent.style.display = 'block';
+                    activeLink = document.querySelector('a[href="#services"]');
+                    if (!isInternalLink) window.scrollTo({ top: 0, behavior: 'smooth' });
+                } else if (pageId === '#about') {
+                    aboutContent.style.display = 'block';
+                    activeLink = document.querySelector('a[href="#about"]');
+                     if (!isInternalLink) window.scrollTo({ top: 0, behavior: 'smooth' });
+                } else {
+                    mainContent.style.display = 'block';
+                    const targetElement = document.querySelector(pageId);
+                    if (targetElement) {
+                        targetElement.scrollIntoView({ behavior: 'smooth' });
+                    }
+                    activeLink = document.querySelector(`a[href="${pageId}"]`);
+                }
+
+                if(activeLink) activeLink.classList.add('active');
+            }
+
+            navLinks.forEach(link => {
+                link.addEventListener('click', (e) => {
+                    e.preventDefault();
+                    const targetId = link.getAttribute('href');
+                    showPage(targetId);
+                    if (window.innerWidth <= 768 && document.getElementById("navLinks").classList.contains('nav-active')) {
+                        toggleMenu();
+                    }
+                });
+            });
+
+            ctaButton.addEventListener('click', (e) => {
+                e.preventDefault();
+                showPage('#services');
+            });
+            
+            // Handle internal links on services page
+            document.querySelectorAll('.learn-more-btn, .service-card a').forEach(link => {
+                link.addEventListener('click', e => {
+                    const targetId = link.getAttribute('href');
+                    if(targetId.startsWith('#') && document.getElementById(targetId.substring(1))) {
+                        e.preventDefault();
+                        const targetElement = document.querySelector(targetId);
+                        if(targetElement) {
+                             targetElement.scrollIntoView({ behavior: 'smooth' });
+                        }
+                    }
+                });
+            });
+
+
+            // FAQ Accordion functionality
+            const faqItems = document.querySelectorAll('.faq-item');
+            faqItems.forEach(item => {
+                const question = item.querySelector('.faq-question');
+                question.addEventListener('click', () => {
+                    const currentlyActive = document.querySelector('.faq-item.active');
+                    if (currentlyActive && currentlyActive !== item) {
+                        currentlyActive.classList.remove('active');
+                    }
+                    item.classList.toggle('active');
+                });
+            });
+
+            // Theme Toggle
+            const themeToggle = document.getElementById('theme-toggle');
+            const htmlEl = document.documentElement;
+
+            if (localStorage.getItem('theme') === 'dark') {
+                htmlEl.classList.add('dark');
+            }
+
+            themeToggle.addEventListener('click', () => {
+                htmlEl.classList.toggle('dark');
+                if (htmlEl.classList.contains('dark')) {
+                    localStorage.setItem('theme', 'dark');
+                } else {
+                    localStorage.setItem('theme', 'light');
+                }
+            });
+
+            // Set initial active link
+            showPage('#home');
+        });
+
+
+        // Pre-payment modal functionality
+        const modal = document.getElementById("requirementsModal");
+        const closeBtn = document.querySelector(".modal-content .close-btn");
+        const payButtons = document.querySelectorAll(".open-modal-btn");
+        const requirementsForm = document.getElementById("requirementsForm");
+        const formFields = document.getElementById("formFields");
+        const packageRequirements = {
+            basic: [
+                { label: "Company Name ", type: "text", name: "company_name", required: true },
+                { label: "Company Address", type: "text", name: "company_Address", required: true },
+                { label: "Director's Name and Surname", type: "text", name: "director_name", required: true },
+                { label: "Director's ID Number", type: "text", name: "director_id", required: true },
+                { label: "Contact Number", type: "tel", name: "contact_number", required: true },
+                { label: "Email Address", type: "email", name: "email", required: true }
+            ],
+            standard: [
+                { label: "Company Name ", type: "text", name: "company_name", required: true },
+                { label: "Company Address", type: "text", name: "company_Address", required: true },
+                { label: "Director's Name and Surname", type: "text", name: "director_name", required: true },
+                { label: "Director's ID Number", type: "text", name: "director_id", required: true },
+                { label: "Contact Number", type: "tel", name: "contact_number", required: true },
+                { label: "Email Address", type: "email", name: "email", required: true },
+            ],
+            premium: [
+                { label: "Company Name ", type: "text", name: "company_name", required: true },
+                { label: "Company Address", type: "text", name: "company_Address", required: true },
+                { label: "Director's Name and Surname", type: "text", name: "director_name", required: true },
+                { label: "Director's ID Number", type: "text", name: "director_id", required: true },
+                { label: "Contact Number", type: "tel", name: "contact_number", required: true },
+                { label: "Email Address", type: "email", name: "email", required: true },
+                { label: "Proposed Business Bank Name", type: "text", name: "bank_name", required: false }
+            ],
+            beneficial_ownership: [
+                { label: "ID Number or Passport Number of BO", type: "text", name: "bo_id_number", required: true },
+                { label: "Cor14.3 Company Certificate", type: "file", name: "cor14_3", required: true },
+                { label: "Email & Phone Number", type: "text", name: "bo_contact_details", required: true }
+            ],
+            nhbrc_qa: [
+                { label: "Email Address", type: "email", name: "email", required: true },
+                { label: "Contact Number", type: "tel", name: "contact_number", required: true }
+            ],
+            tax_clearance: [
+                { label: "Company Registration Number", type: "text", name: "company_reg_number", required: true },
+                { label: "Cor14.3 Company Certificate", type: "file", name: "cor14_3", required: true }
+            ],
+            b_bbee_renewal: [
+                { label: "CIPC Logins", type: "text", name: "cipc_logins", required: true }
+            ],
+            csd_registration: [
+                { label: "Cellphone Number (for OTP)", type: "tel", name: "cellphone_number", required: true },
+                { label: "ID or Company Registration Number", type: "text", name: "id_or_reg_number", required: true },
+                { label: "Contact Name", type: "text", name: "contact_name", required: true },
+                { label: "Email Address", type: "email", name: "email", required: true },
+                { label: "Physical Address", type: "text", name: "physical_address", required: true },
+                { label: "Bank Account Details", type: "text", name: "bank_details", required: true },
+                { label: "Directors/Members Names & IDs", type: "textarea", name: "directors_info", required: true },
+                { label: "Goods and Services Offered", type: "textarea", name: "goods_services", required: true }
+            ],
+            coida_registration: [
+                { label: "Cor14.3 (Company Certificate)", type: "file", name: "cor14_3_coida", required: true },
+                { label: "ID Copy of Director(s)", type: "file", name: "id_copy_coida", required: true },
+                { label: "Bank Confirmation Letter", type: "file", name: "bank_letter_coida", required: true }
+            ],
+            nhbrc_registration: [
+                { label: "Company Certificate", type: "file", name: "company_cert_nhbrc", required: true },
+                { label: "Certified ID of the directors", type: "file", name: "certified_id_nhbrc", required: true },
+                { label: "Annual Return Report from CIPC", type: "file", name: "annual_return_nhbrc", required: true },
+                { label: "ID copy for the exam writer", type: "file", name: "exam_writer_id_nhbrc", required: true },
+                { label: "Business Account Details", type: "text", name: "business_account_nhbrc", required: true }
+            ],
+            company_reinstatement: [
+                { label: "Cor14.3 Doc", type: "file", name: "cor14_3_reinstatement", required: true }
+            ],
+            annual_returns: [
+                { label: "Company Registration Number", type: "text", name: "company_reg_number_annual", required: true }
+            ]
+        };
+        let currentPayForm = null;
+        payButtons.forEach(button => {
+            button.addEventListener("click", () => {
+                const packageType = button.dataset.package;
+                currentPayForm = button.closest(".package-form, .service-pay-card form");
+                formFields.innerHTML = "";
+                packageRequirements[packageType].forEach(req => {
+                    const label = document.createElement("label");
+                    label.textContent = req.label + (req.required ? '*' : '');
+                    const input = req.type === 'textarea' ? document.createElement('textarea') : document.createElement("input");
+                    if (req.type !== 'textarea') input.type = req.type;
+                    input.name = req.name;
+                    input.placeholder = req.label;
+                    input.required = req.required;
+                    formFields.appendChild(label);
+                    formFields.appendChild(input);
+                });
+                document.getElementById("modal-title").textContent = `Requirements for ${packageType.replace(/_/g, ' ').toUpperCase()}`;
+                modal.style.display = "block";
+            });
+        });
+        closeBtn.addEventListener("click", () => {
+            modal.style.display = "none";
+        });
+        window.addEventListener("click", (event) => {
+            if (event.target == modal) {
+                modal.style.display = "none";
+            }
+        });
+        requirementsForm.addEventListener("submit", (event) => {
+                event.preventDefault();
+                if (currentPayForm) {
+                    const formData = new FormData(requirementsForm);
+                    formData.forEach((value, key) => {
+                        const hiddenInput = document.createElement("input");
+                        hiddenInput.type = "hidden";
+                        hiddenInput.name = key;
+                        hiddenInput.value = value instanceof File ? value.name : value;
+                        currentPayForm.appendChild(hiddenInput);
+                    });
+                    currentPayForm.submit();
+                }
+                modal.style.display = "none";
+            });
+    </script>
+</body>
+</html>
